@@ -1,82 +1,122 @@
 
 /**
+ * Color variable
+orange = #FF6600;
+dark orange = #C13B00;
+black = #1B1D1E;
+gray = #5E6D70;
+*/
+
+/**
+ * Base structure
+ */
+body {
+    background:#fff;
+    color:#1B1D1E;
+    font-family:'Roboto', sans-serif;
+}
+
+/**
  * Loading animation
  */
 #loading {
-  position:fixed;
-  top:0;
-  left:0;
-  width:100%;
-  height:100%;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+}
+
+#loading h1 {
+  font-weight:100;
+  color:#5E6D70;
+  font-size:40px;
 }
 
 #loading .layer {
-  position:absolute;
-  top:0;
-  left:0;
-  width:100%;
-  height:100%;
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
 }
 
 #loading .back.layer {
-  background:#ff0;
-  opacity:0.5;
+    background:#fff;
 }
 
 #loading .front.layer {
-  background:#f00;
-  opacity:0.5;
+    top:50%;
+    left:50%;
+    margin-top:-130px;
+    margin-left:-200px;
+    width:400px;
+    height:260px;
+    text-align:center;
 }
 
 #loading .front .spinner {
-  position:absolute;
-  top:100px;
-  left:200px;
-  width:300px;
-  height:300px;
+    position:relative;
+    margin:10px auto;
+    width:155px;
+    height:155px;
 }
 
 #loading .spinner span {
-position:absolute;
-display:block;
-width: 0; 
-height: 0; 
+    position:absolute;
+    display:block;
+    width: 0; 
+    height: 0; 
+    transition: all 500ms;
 }
 
 #loading .spinner span.bottom {
-border-left: 45px solid transparent;
-border-right: 45px solid transparent;
-border-top: 80px solid #fff;
+    border-left: 32px solid transparent;
+    border-right: 32px solid transparent;
+    border-top: 60px solid #fff;
 }
 
 #loading .spinner span.top {
-top:100px;
-border-left: 45px solid transparent;
-border-right: 45px solid transparent;
-border-bottom: 80px solid #fff;
+    top:100px;
+    border-left: 32px solid transparent;
+    border-right: 32px solid transparent;
+    border-bottom: 60px solid #fff;
+}
+
+#loading .spinner span.bottom.colored {
+    border-top-color: #FF6600;
+}
+
+#loading .spinner span.top.colored {
+    border-bottom-color: #FF6600;
+}
+
+#loading .spinner span.slice1 {
+    top: 0px;
+    left:45px;
 }
 
 #loading .spinner span.slice2 {
-  top: 3px;
-  left: 50px;
+    top: 10px;
+    left: 90px;
 }
 
 #loading .spinner span.slice3 {
-  top: 89px;
-  left: 50px;
+    top: 85px;
+    left: 90px;
 }
 
 #loading .spinner span.slice4 {
-  top: 92px;
-  left: 0px;
+    top: 92px;
+    left: 45px;
 }
 
 #loading .spinner span.slice5 {
-  top: 89px;
-  left: -50px;
+    top: 85px;
+    left: 0px;
 }
 
 #loading .spinner span.slice6 {
-   top: 3px;
-  left: -50px;
+    top: 10px;
+    left: 0px;
 }
