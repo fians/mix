@@ -238,7 +238,6 @@ body {
 #header a {
     text-decoration:none;
     color:#f60;
-    font-size:25px;
 }
 
 #header .wrapper {
@@ -247,10 +246,119 @@ body {
 }
 
 #header .logo {
-    font-weight:bold;
     float:left;
+    font-size:25px;
+    font-weight:bold;
 }
 
 #header .about {
     float:right;
+    font-size:20px;
+    font-weight:300;
+}
+
+/**
+ * Player
+ */
+#player {
+  background:#aaa;
+  height:200px;
+  width:100%;
+}
+
+/**
+ * List
+ */
+#list {
+    width:550px;
+    margin:10px auto;
+    box-sizing:border-box;
+}
+
+#list h2 {
+    margin:10px 10px;
+    padding:10px;
+    font-weight:300;
+    font-size:40px;
+    border-bottom:1px solid #ccc;
+}
+
+#list .container {
+    margin:30px 10px;
+}
+
+#list .item {
+    position:relative;
+    padding:10px;
+    margin:10px 0;
+    background:#fff;
+    box-shadow:1px 1px 5px 1px rgba(0, 0, 0, 0.2);
+}
+
+#list .item .image {
+    float:left;
+    margin:10px 0px 10px 20px;
+    width:125px;
+}
+
+#list .item .image img {
+    width:100%;
+    height:100%; 
+}
+
+#list .item .content {
+    float:left;
+    margin:10px; 
+}
+
+#list .item .content h3 {
+    margin:2px 5px;
+    font-weight:400;
+    font-size:23px;
+}
+
+#list .item .content p {
+    margin:2px 5px;
+}
+
+#list .item .content a {
+    color:#aaa;
+    font-size:14px; 
+}
+
+#list .item .drag {
+    position:absolute;
+    top:0;
+    left:0;
+    padding-top:5px;
+    width:15px;
+    height:100%;
+    background:#f60;
+    cursor:move;
+    box-sizing:border-box;
+}
+
+#list .item .drag i {
+    display:block;
+    border-radius:50%;
+    width:9px;
+    height:9px;
+    background:#fff;
+    margin:5px 3px;
+}
+
+#list .item .remove {
+    position:absolute;
+    top:0;
+    right:0;
+    font-size:30px;
+    font-weight:bold;
+    line-height:100%;
+    padding:2px 7px;
+    color:#ccc;
+    cursor:pointer;
+}
+
+#list .item .remove:hover {
+    color:#f60;
 }
