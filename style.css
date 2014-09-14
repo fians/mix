@@ -11,9 +11,9 @@ gray = #5E6D70;
  * Base structure
  */
 body {
-    background:#fff;
-    color:#1B1D1E;
-    font-family:'Lato', sans-serif;
+    background: #fff;
+    color: #1B1D1E;
+    font-family: 'Lato', sans-serif;
 }
 
 .animate {
@@ -21,7 +21,11 @@ body {
 }
 
 .hide {
-    display:none !important;
+    display: none !important;
+}
+
+.clear {
+    clear: both;
 }
 
 /**
@@ -221,3 +225,32 @@ body {
     transform: translate(-400px, -195px);
 }
 
+/**
+ * Header
+ */
+#header {
+    border-bottom: 1px solid #f60;
+    padding:15px 40px;
+    width:100%;
+    box-sizing:border-box;
+}
+
+#header a {
+    text-decoration:none;
+    color:#f60;
+    font-size:25px;
+}
+
+#header .wrapper {
+    max-width:1024px;
+    margin:0 auto;
+}
+
+#header .logo {
+    font-weight:bold;
+    float:left;
+}
+
+#header .about {
+    float:right;
+}

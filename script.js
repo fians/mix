@@ -72,7 +72,7 @@
 		setTimeout(function() {
 			return removeLoader(function() {
 				removeBackPart(function() {
-					$('#loader').addClass('hide');
+					$('#loading').addClass('hide');
 				});
 			});
 		}, 500);
@@ -85,7 +85,7 @@
 
 	$(document).on('loaderFinish', openingAct);
 
-	spinLoader();
+	//spinLoader();
 
 	setTimeout(function() {
 		loaderRunning = false;
